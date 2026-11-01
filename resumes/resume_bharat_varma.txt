@@ -1,0 +1,16 @@
+Bharat Varma
+Java Developer | bharat.varma@email.com
+
+Summary
+Java Developer with 4 years of experience in Java and Spring Boot. Built Spring Boot APIs for insurance quotes.
+
+Skills
+Java, Spring Boot, PostgreSQL, Docker
+
+Experience
+Finware - Java Developer (2022-present)
+Built Spring Boot APIs for insurance quotes.
+Daily work uses Java, Spring Boot, PostgreSQL, Docker.
+
+Education
+B.Tech Computer Science, SRM University, 2021

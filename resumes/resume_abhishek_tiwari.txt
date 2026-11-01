@@ -1,0 +1,16 @@
+Abhishek Tiwari
+Data Engineer | abhishek.tiwari@email.com
+
+Summary
+Data Engineer with 4 years of experience in Scala and Spark. Wrote Scala Spark jobs for fraud features.
+
+Skills
+Scala, Spark, SQL, Hadoop
+
+Experience
+Finware - Data Engineer (2022-present)
+Wrote Scala Spark jobs for fraud features.
+Daily work uses Scala, Spark, SQL, Hadoop.
+
+Education
+B.Tech Computer Science, MNNIT Allahabad, 2021

@@ -1,0 +1,16 @@
+Hema Latha
+Business Analyst | hema.latha@email.com
+
+Summary
+Business Analyst with 5 years of experience in SQL and Excel. Builds Power BI dashboards for operations.
+
+Skills
+SQL, Excel, Power BI, Stakeholder management
+
+Experience
+Acme - Business Analyst (2021-present)
+Builds Power BI dashboards for operations.
+Daily work uses SQL, Excel, Power BI, Stakeholder management.
+
+Education
+MBA, Symbiosis, 2020

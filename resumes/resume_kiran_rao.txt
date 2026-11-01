@@ -1,0 +1,16 @@
+Kiran Rao
+Python Developer | kiran.rao@email.com
+
+Summary
+Python Developer with 5 years of experience in Python and Django. Runs Django REST APIs for a logistics platform on AWS.
+
+Skills
+Python, Django, REST, Docker, AWS
+
+Experience
+Cargo Hub - Python Developer (2021-present)
+Runs Django REST APIs for a logistics platform on AWS.
+Daily work uses Python, Django, REST, Docker, AWS.
+
+Education
+B.E. Information Technology, Osmania University, 2020

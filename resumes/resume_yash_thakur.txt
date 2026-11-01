@@ -1,0 +1,16 @@
+Yash Thakur
+iOS Engineer | yash.thakur@email.com
+
+Summary
+iOS Engineer with 2 years of experience in Swift and iOS. Built UIKit screens for a travel app.
+
+Skills
+Swift, iOS, UIKit
+
+Experience
+Brightpath - iOS Engineer (2024-present)
+Built UIKit screens for a travel app.
+Daily work uses Swift, iOS, UIKit.
+
+Education
+B.Tech Computer Science, LPU, 2023

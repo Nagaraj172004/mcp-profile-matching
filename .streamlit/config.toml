@@ -1,0 +1,7 @@
+[server]
+# The default watcher imports every transformers submodule and stalls the app.
+fileWatcherType = "none"
+headless = true
+
+[browser]
+gatherUsageStats = false

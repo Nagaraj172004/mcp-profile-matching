@@ -1,0 +1,16 @@
+Deepika Rawat
+Data Engineer | deepika.rawat@email.com
+
+Summary
+Data Engineer with 3 years of experience in Python and Spark. Moved Spark SQL reporting into BigQuery.
+
+Skills
+Python, Spark, SQL, BigQuery
+
+Experience
+Cloudline - Data Engineer (2023-present)
+Moved Spark SQL reporting into BigQuery.
+Daily work uses Python, Spark, SQL, BigQuery.
+
+Education
+B.Tech Computer Science, Graphic Era University, 2022

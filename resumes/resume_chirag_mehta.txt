@@ -1,0 +1,16 @@
+Chirag Mehta
+Backend Engineer | chirag.mehta@email.com
+
+Summary
+Backend Engineer with 4 years of experience in Python and Django. Moved Django sessions to Redis for the login service.
+
+Skills
+Python, Django, Redis, Docker
+
+Experience
+Acme Payments - Backend Engineer (2022-present)
+Moved Django sessions to Redis for the login service.
+Daily work uses Python, Django, Redis, Docker.
+
+Education
+B.Tech Computer Science, Nirma University, 2021

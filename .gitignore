@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+chroma_db/
+data/
+logs/
+reports/
+transcripts/offline/
+.env
+.ipynb_checkpoints/
+.pytest_cache/
+.streamlit/secrets.toml
+docker/certs/*.crt
+.certs/
+.certs/
+resumes/resume_ravi_teja.txt

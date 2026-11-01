@@ -1,0 +1,16 @@
+Tejas Rane
+DevOps Engineer | tejas.rane@email.com
+
+Summary
+DevOps Engineer with 3 years of experience in Kubernetes and Terraform. Provisions AKS clusters with Terraform.
+
+Skills
+Kubernetes, Terraform, Azure
+
+Experience
+Northwind - DevOps Engineer (2023-present)
+Provisions AKS clusters with Terraform.
+Daily work uses Kubernetes, Terraform, Azure.
+
+Education
+B.Tech Computer Science, VJTI, 2022

@@ -1,0 +1,39 @@
+sequenceDiagram
+    autonumber
+    actor R as Recruiter
+    participant G as LangGraph agent
+    participant H as MCPHub
+    participant FS as filesystem server
+    participant RS as resume_search server
+    participant DB as candidate_db server
+
+    Note over H,DB: startup: initialize + tools/list on each server
+    R->>G: jobs/senior_python_backend.txt
+    G->>H: parse_jd
+    H->>FS: tools/call read_file
+    FS-->>H: job text
+    G->>H: search_resumes (round 1)
+    H->>RS: tools/call rank_resumes
+    RS-->>H: 100 scored resumes
+    G->>H: rank_candidates (round 2)
+    H->>FS: tools/call batch_process(read, 10 paths)
+    FS-->>H: progress 1..10, then texts
+    H->>FS: tools/call batch_process(search, skills)
+    G->>H: generate_report (round 3)
+    H->>FS: tools/call write_file reports/...md
+    H->>DB: tools/call save_shortlist
+    G-->>R: report, then interrupt() waits
+    R->>G: Watch for new resumes
+    G->>H: watch_resumes
+    H->>FS: tools/call watch_directory
+    Note over FS: a new resume lands in resumes/
+    FS-->>H: created event + resources/list_changed
+    H->>FS: tools/call batch_process(read, new file)
+    H->>RS: tools/call upsert_resumes
+    G->>H: re-run rounds 1-3
+    G-->>R: new candidate ranked, changes explained
+    R->>G: Have we shortlisted Ravi before?
+    G->>H: agent tool call
+    H->>DB: tools/call get_candidate_history
+    DB-->>H: past shortlists and decisions
+    G-->>R: grounded answer

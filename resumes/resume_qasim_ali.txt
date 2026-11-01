@@ -1,0 +1,16 @@
+Qasim Ali
+Deep Learning Engineer | qasim.ali@email.com
+
+Summary
+Deep Learning Engineer with 6 years of experience in Python and PyTorch. Trained PyTorch vision models for defect detection.
+
+Skills
+Python, PyTorch, Computer Vision, CUDA
+
+Experience
+Visionary - Deep Learning Engineer (2020-present)
+Trained PyTorch vision models for defect detection.
+Daily work uses Python, PyTorch, Computer Vision, CUDA.
+
+Education
+M.S. Electrical Engineering, Georgia Tech, 2019

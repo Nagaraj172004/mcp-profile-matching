@@ -1,0 +1,36 @@
+{
+  "filesystem": {
+    "server_name": "resume-filesystem",
+    "allowed_directories": ["resumes", "jobs", "reports"],
+    "writable_directories": ["reports"],
+    "supported_extensions": [".pdf", ".txt", ".docx"],
+    "writable_extensions": [".md", ".txt", ".json"],
+    "max_file_size_mb": 5,
+    "max_batch_size": 200,
+    "batch_max_workers": 8,
+    "watch_poll_interval_seconds": 1.0,
+    "watch_max_timeout_seconds": 120
+  },
+  "resume_search": {
+    "server_name": "resume-search",
+    "chroma_dir": "chroma_db",
+    "collection": "resumes"
+  },
+  "candidate_db": {
+    "server_name": "candidate-db",
+    "database_path": "data/candidates.db"
+  },
+  "transport": {
+    "mode": "stdio",
+    "host": "127.0.0.1",
+    "ports": {
+      "filesystem": 8101,
+      "resume_search": 8102,
+      "candidate_db": 8103
+    }
+  },
+  "logging": {
+    "level": "INFO",
+    "directory": "logs"
+  }
+}

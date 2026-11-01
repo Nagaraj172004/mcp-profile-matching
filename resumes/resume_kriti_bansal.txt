@@ -1,0 +1,16 @@
+Kriti Bansal
+Data Analyst | kriti.bansal@email.com
+
+Summary
+Data Analyst with 3 years of experience in Python and SQL. Analyzes marketplace funnels in SQL and pandas.
+
+Skills
+Python, SQL, Tableau, pandas
+
+Experience
+Reco Labs - Data Analyst (2023-present)
+Analyzes marketplace funnels in SQL and pandas.
+Daily work uses Python, SQL, Tableau, pandas.
+
+Education
+B.Sc. Economics, Delhi University, 2022

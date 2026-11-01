@@ -1,0 +1,16 @@
+Waseem Akram
+Data Engineer | waseem.akram@email.com
+
+Summary
+Data Engineer with 5 years of experience in Python and Spark. Streams clickstream data from Kafka into Spark.
+
+Skills
+Python, Spark, SQL, Kafka, Airflow
+
+Experience
+Reco Labs - Data Engineer (2021-present)
+Streams clickstream data from Kafka into Spark.
+Daily work uses Python, Spark, SQL, Kafka, Airflow.
+
+Education
+B.Tech Computer Science, AMU, 2020

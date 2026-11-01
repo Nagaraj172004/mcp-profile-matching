@@ -1,0 +1,35 @@
+flowchart LR
+    user([Recruiter<br/>CLI or Streamlit]) --> lg
+
+    subgraph agent["Agent process: matching_agent.py"]
+        lg["LangGraph state machine<br/>parse_jd, extract_requirements,<br/>search, rank, report,<br/>human_feedback, watch_resumes"]
+        react["Tool-calling agent<br/>+ ToolNode"]
+        hub["MCPHub (mcp_client.py)<br/>one session per server<br/>call log, notifications"]
+        llm["Groq LLM<br/>(API key stays here)"]
+        lg --> hub
+        lg --> react
+        react --> hub
+        react --> llm
+    end
+
+    hub -- "JSON-RPC 2.0<br/>stdio or streamable HTTP" --> fs
+    hub -- "JSON-RPC 2.0" --> rs
+    hub -- "JSON-RPC 2.0" --> db
+
+    subgraph fs["filesystem_mcp_server.py"]
+        fstools["tools: list_files, read_file,<br/>write_file, search_in_file,<br/>watch_directory, batch_process"]
+        fsres["resources: resumes://, jobs://,<br/>config://server, watch://events<br/>prompt: screen_resume"]
+        sandbox["sandbox: allowed / writable folders,<br/>size and type limits, error codes"]
+    end
+
+    subgraph rs["resume_search_mcp_server.py"]
+        rstools["tools: index_resumes, upsert_resumes,<br/>remove_resumes, rank_resumes,<br/>semantic_search, skill_vocabulary"]
+    end
+
+    subgraph db["candidate_db_mcp_server.py"]
+        dbtools["tools: save_shortlist, record_decision,<br/>get_candidate_history, list_shortlists,<br/>query_records (read-only)"]
+    end
+
+    fs --> files[("resumes/ jobs/ reports/")]
+    rs --> chroma[("chroma_db<br/>MiniLM embeddings")]
+    db --> sqlite[("data/candidates.db")]

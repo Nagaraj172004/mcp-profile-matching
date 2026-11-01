@@ -1,0 +1,17 @@
+Ravi Teja
+Senior Backend Engineer | ravi.teja@email.com
+
+Summary
+Senior Backend Engineer with 9 years of experience in Python and Django. Scaled a Django REST payments platform on PostgreSQL to 3 million daily requests.
+
+Skills
+Python, Django, PostgreSQL, Docker, REST, Celery, Redis
+
+Experience
+Finware - Senior Backend Engineer (2017-present)
+Scaled a Django REST payments platform on PostgreSQL to 3 million daily requests.
+Containerized every service with Docker and cut deploy time from 40 minutes to 6.
+Daily work uses Python, Django, PostgreSQL, Docker, REST, Celery, Redis.
+
+Education
+B.Tech Computer Science, IIT Hyderabad, 2016

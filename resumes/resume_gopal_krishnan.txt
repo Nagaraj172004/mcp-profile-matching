@@ -1,0 +1,16 @@
+Gopal Krishnan
+Frontend Engineer | gopal.krishnan@email.com
+
+Summary
+Frontend Engineer with 1 years of experience in React and TypeScript. Built React components during a one-year apprenticeship.
+
+Skills
+React, TypeScript, HTML, CSS
+
+Experience
+Campus Lab - Frontend Engineer (2025-present)
+Built React components during a one-year apprenticeship.
+Daily work uses React, TypeScript, HTML, CSS.
+
+Education
+B.Sc. Computer Science, Kerala University, 2025

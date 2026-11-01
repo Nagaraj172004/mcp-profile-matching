@@ -1,0 +1,16 @@
+Pranav Hegde
+Site Reliability Engineer | pranav.hegde@email.com
+
+Summary
+Site Reliability Engineer with 9 years of experience in Kubernetes and Terraform. Keeps 99.99 percent uptime on Kubernetes clusters.
+
+Skills
+Kubernetes, Terraform, Prometheus, Golang, Linux
+
+Experience
+Finware - Site Reliability Engineer (2017-present)
+Keeps 99.99 percent uptime on Kubernetes clusters.
+Daily work uses Kubernetes, Terraform, Prometheus, Golang, Linux.
+
+Education
+M.S. Computer Science, UT Austin, 2016

@@ -1,0 +1,70 @@
+# Three MCP servers as HTTP services. The agent runs on the host:
+#   docker compose up -d --build
+#   set MCP_TRANSPORT=http        (PowerShell: $env:MCP_TRANSPORT="http")
+#   python ingest.py
+#   python chat_cli.py jobs/senior_python_backend.txt
+
+x-server: &server
+  image: mcp-profile-matching:latest
+  restart: unless-stopped
+  environment: &env
+    MCP_TRANSPORT: http
+    MCP_HOST: 0.0.0.0
+    MCP_LOG_LEVEL: INFO
+
+services:
+  filesystem:
+    <<: *server
+    build: .
+    command: ["python", "filesystem_mcp_server.py", "--transport", "http", "--host", "0.0.0.0", "--port", "8101"]
+    ports: ["127.0.0.1:8101:8101"]
+    environment:
+      <<: *env
+      MCP_ALLOWED_HOSTS: filesystem:8101
+    volumes:
+      - ./resumes:/app/resumes
+      - ./jobs:/app/jobs:ro
+      - ./reports:/app/reports
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8101/health', timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+  resume_search:
+    <<: *server
+    command: ["python", "resume_search_mcp_server.py", "--transport", "http", "--host", "0.0.0.0", "--port", "8102"]
+    ports: ["127.0.0.1:8102:8102"]
+    environment:
+      <<: *env
+      MCP_ALLOWED_HOSTS: resume_search:8102
+      HF_HUB_OFFLINE: "1"
+    volumes:
+      - ./chroma_db:/app/chroma_db
+      - ./logs:/app/logs
+    depends_on:
+      filesystem:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8102/health', timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 60s
+
+  candidate_db:
+    <<: *server
+    command: ["python", "candidate_db_mcp_server.py", "--transport", "http", "--host", "0.0.0.0", "--port", "8103"]
+    ports: ["127.0.0.1:8103:8103"]
+    environment:
+      <<: *env
+      MCP_ALLOWED_HOSTS: candidate_db:8103
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8103/health', timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 5

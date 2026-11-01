@@ -1,0 +1,16 @@
+Tanvi Desai
+Applied Scientist | tanvi.desai@email.com
+
+Summary
+Applied Scientist with 8 years of experience in Python and PyTorch. Led the PyTorch search relevance model used by 5 million users.
+
+Skills
+Python, PyTorch, NLP, Deep Learning, AWS
+
+Experience
+TextGrid - Applied Scientist (2018-present)
+Led the PyTorch search relevance model used by 5 million users.
+Daily work uses Python, PyTorch, NLP, Deep Learning, AWS.
+
+Education
+Ph.D. Computer Science, IIT Madras, 2017

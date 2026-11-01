@@ -1,0 +1,16 @@
+Gaurav Sinha
+Backend Engineer | gaurav.sinha@email.com
+
+Summary
+Backend Engineer with 6 years of experience in Python and FastAPI. Built FastAPI pricing services with async PostgreSQL.
+
+Skills
+Python, FastAPI, PostgreSQL, Docker
+
+Experience
+Helio - Backend Engineer (2020-present)
+Built FastAPI pricing services with async PostgreSQL.
+Daily work uses Python, FastAPI, PostgreSQL, Docker.
+
+Education
+B.Tech Computer Science, BIT Mesra, 2019

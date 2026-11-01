@@ -1,0 +1,16 @@
+Nandini Iyer
+Backend Engineer | nandini.iyer@email.com
+
+Summary
+Backend Engineer with 6 years of experience in Python and Django. Added Elasticsearch product search to a Django storefront.
+
+Skills
+Python, Django, PostgreSQL, Elasticsearch
+
+Experience
+Brightpath - Backend Engineer (2020-present)
+Added Elasticsearch product search to a Django storefront.
+Daily work uses Python, Django, PostgreSQL, Elasticsearch.
+
+Education
+B.E. Computer Science, SSN College, 2019

@@ -1,0 +1,36 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	parse_jd(parse_jd)
+	extract_requirements(extract_requirements)
+	search_resumes(search_resumes)
+	rank_candidates(rank_candidates)
+	generate_report(generate_report)
+	human_feedback(human_feedback)
+	watch_resumes(watch_resumes)
+	agent(agent)
+	tools(tools<hr/><small><em>__tools = list_files, read_file, search_in_file, semantic_search, record_decision, get_candidate_history, list_shortlists, query_records, extract_requirements, compare_candidates, explain_ranking, generate_interview_questions, get_candidate_report</em></small>)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> parse_jd;
+	agent -.-> human_feedback;
+	agent -.-> tools;
+	extract_requirements --> search_resumes;
+	generate_report --> human_feedback;
+	human_feedback -.-> __end__;
+	human_feedback -.-> agent;
+	human_feedback -.-> extract_requirements;
+	human_feedback -.-> parse_jd;
+	human_feedback -.-> watch_resumes;
+	parse_jd --> extract_requirements;
+	rank_candidates --> generate_report;
+	search_resumes --> rank_candidates;
+	tools --> agent;
+	watch_resumes -.-> human_feedback;
+	watch_resumes -.-> search_resumes;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

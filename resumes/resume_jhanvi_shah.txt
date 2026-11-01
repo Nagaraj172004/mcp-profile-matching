@@ -1,0 +1,16 @@
+Jhanvi Shah
+Frontend Engineer | jhanvi.shah@email.com
+
+Summary
+Frontend Engineer with 3 years of experience in Angular and TypeScript. Built Angular admin portals in TypeScript.
+
+Skills
+Angular, TypeScript, RxJS, CSS
+
+Experience
+Finware - Frontend Engineer (2023-present)
+Built Angular admin portals in TypeScript.
+Daily work uses Angular, TypeScript, RxJS, CSS.
+
+Education
+B.Tech Computer Science, DAIICT, 2022
